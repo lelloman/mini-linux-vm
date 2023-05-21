@@ -1,0 +1,4 @@
+staging/
+rootfs.ext2
+linux/
+busybox/
