@@ -12,7 +12,7 @@ sudo qemu-system-x86_64 \
   -enable-kvm \
   -smp 4 \
   -device e1000,netdev=eth0 \
-  -netdev user,id=eth0,hostfwd=tcp::5555-:22,hostfwd=udp::6666-:6667,hostfwd=tcp::3333-:4444 \
+  -netdev user,id=eth0,hostfwd=tcp::5555-:22,hostfwd=udp::6666-:6667,hostfwd=tcp::3333-:4444,hostfwd=tcp::6668-:23 \
   -cpu host \
   -virtfs local,path=shared,mount_tag=host0,security_model=passthrough,id=host0 \
 
